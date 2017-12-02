@@ -1,0 +1,6 @@
+
+def main(input):
+    lines = input.splitlines()
+    for line in lines:
+        for item in line.split(" ")
+        

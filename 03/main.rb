@@ -1,11 +1,11 @@
 grid = []
 
-1000.times.each do |i|
-  grid[i] = Array.new(1000, 0)
+100.times.each do |i|
+  grid[i] = Array.new(100, 0)
 end
 
-x = 500
-y = 500
+x = 50
+y = 50
 direction = "right"
 is_turning = false
 path_length = 1
@@ -24,7 +24,7 @@ grid[x][y] = 1
                grid[x + 1][y - 1] +
                grid[x - 1][y - 1] +
                grid[x][y]
-  puts grid[x][y] if grid[x][y] > 312051
+  break if grid[x][y] > 312051
   if is_turning
     case direction
     when "right"
@@ -61,4 +61,11 @@ grid[x][y] = 1
       path_length = path_length + 1
     end
   end
+end
+
+grid.each do |row|
+  row.each do |item|
+    
+  end
+  puts ""
 end

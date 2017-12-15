@@ -1,11 +1,27 @@
-
 fn main() {
-    let mut grid: Vec<Vec<i32>> = Vec::new();
-    for _i in 0..99 {
-        grid.push(vec![0; 100]);
+    let mut vec: Vec<Vec<i32>> = Vec::new();
+
+    for _i in 1..100 {
+        vec.push(vec![0; 100]);
     }
 
-    for i in 0..99 {
-        println!("{}", )
+    //////////////////////////////
+    // let x = 50;              //
+    // let y = 50;              //
+    // let direction = "right"; //
+    // let is_turning = false;  //
+    // let path_length = 1;     //
+    // let steps_taken = 0;     //
+    // let times = 0;           //
+    //////////////////////////////
+
+    for row in &vec {
+
+    }
+
+    for row in &vec {
+        for item in row {
+            println!("{}", item)
+        }
     }
 }

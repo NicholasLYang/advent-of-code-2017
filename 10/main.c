@@ -68,8 +68,8 @@ int main() {
     int inputLength = sizeof(input)/sizeof(input[0]);
     int index = 0;
     for (int i = 0; i < 64; i++) {
-        printf("%i\n", i * (inputLength - 1));
-        index = hashRound(array, inputLength, input, i * (inputLength - 1), index);
+        printf("%i\n", i * inputLength);
+        index = hashRound(array, inputLength, input, i * inputLength, index);
     }
     int* denseHash = makeDenseHash(array);
     for (int i = 0; i < 16; i++) {
